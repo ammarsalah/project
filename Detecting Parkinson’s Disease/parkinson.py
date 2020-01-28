@@ -11,6 +11,7 @@ features=df.loc[:,df.columns!='status'].values[:,1:]
 labels=df.loc[:,'status'].values
 print(labels[labels==1].shape[0], labels[labels==0].shape[0])
 scaler=MinMaxScaler((-1,1))
+#
 x=scaler.fit_transform(features)
 y=labels
 x_train,x_test,y_train,y_test=train_test_split(x, y, test_size=0.2, random_state=7)
