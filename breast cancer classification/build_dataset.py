@@ -13,7 +13,7 @@ testPaths=originalPaths[index:]
 index=int(len(trainPaths)*config.VAL_SPLIT)
 valPaths=trainPaths[:index]
 trainPaths=trainPaths[index:]
-
+#
 datasets=[("training", trainPaths, config.TRAIN_PATH),
           ("validation", valPaths, config.VAL_PATH),
           ("testing", testPaths, config.TEST_PATH)
