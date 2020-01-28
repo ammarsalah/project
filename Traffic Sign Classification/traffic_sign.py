@@ -12,6 +12,9 @@ from keras.layers import Conv2D, MaxPool2D, Dense, Flatten, Dropout
 
 
 
+
+
+
 data = []
 labels = []
 classes = 43
