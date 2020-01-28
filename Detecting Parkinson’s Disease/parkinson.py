@@ -7,6 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 df=pd.read_csv('D:\\DataFlair\\parkinsons.data')
 df.head()
+
 features=df.loc[:,df.columns!='status'].values[:,1:]
 labels=df.loc[:,'status'].values
 print(labels[labels==1].shape[0], labels[labels==0].shape[0])
